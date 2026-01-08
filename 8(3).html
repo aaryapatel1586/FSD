@@ -1,0 +1,23 @@
+<script>
+    function saveu(){
+        let obj=document.getElementById('a').value  
+        localStorage.setItem('user',obj)
+        sessionStorage.setItem('user',obj)
+    }
+    function showu(){
+        let a=localStorage.getItem('user')
+        let b=sessionStorage.getItem('user')
+        document.getElementById('demo').innerHTML=
+                                      "Local Storage:"+a+"<br>Session Storage:"+b
+    } 
+    function clearu(){
+        localStorage.clear()
+        sessionStorage.clear()
+        document.getElementById('demo').innerHTML='All Clear'
+    }
+</script>
+<input type="text" id="a" placeholder="lakho">
+<button onclick="saveu()"> Save </button>
+<button onclick="showu()"> Show </button>
+<button onclick="clearu()">Clear</button>
+<p id="demo"></p>

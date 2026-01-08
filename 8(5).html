@@ -1,0 +1,21 @@
+<script>
+    function saveu(){
+        let obj=document.getElementById('a').value  
+        localStorage.setItem('productname',obj)
+        let obj1=document.getElementById('b').value  
+        localStorage.setItem('price',obj1)
+        let obj2=document.getElementById('c').value  
+        localStorage.setItem('Discount',obj2)
+    }
+    function removediscount(){
+        let data=localStorage.getItem('productname')
+        console.log(data)
+        localStorage.removeItem('price')
+        localStorage.removeItem('Discount')
+    }
+</script>
+<input type="text" id="a" placeholder="enter product name">
+<input type="text" id="b" placeholder="enter price of product">
+<input type="text" id="c" placeholder="enter Discount of this product">
+<button onclick="saveu()"> Save </button>
+<button onclick="removediscount()"> Discount </button>
