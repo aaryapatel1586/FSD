@@ -1,0 +1,14 @@
+<head>
+    <p class="b"> Hello </p>
+    <p class="b"> Hii </p>
+   <button onclick="fun()">Click</button>
+   <script>
+    function fun(){
+        let i=document.getElementsByClassName('b')
+        // i[0].innerHTML="How R u?"
+        for (let p of i){
+             p.innerHTML="How R u?"
+        }
+    }
+   </script>
+</head>

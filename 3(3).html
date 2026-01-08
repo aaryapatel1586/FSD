@@ -1,0 +1,16 @@
+<body>
+    <div onmouseover="this.style.color='tomato'">Hello</div>
+    <div onmouseout="this.style.backgroundColor='cyan'">Hi</div>
+    <div onmousedown="fun(this)" onmouseup="fun2(this)" 
+    style="height:100px;width:100px;background-color:pink ;"> </div>
+    <script>
+    function fun(e){
+        e.innerHTML='on Button press'
+        e.style.backgroundColor='cyan'
+    }
+    function fun2(e){
+        e.innerHTML="on Button Release"
+        e.style.backgroundColor='tomato'
+    }
+    </script>
+</body>

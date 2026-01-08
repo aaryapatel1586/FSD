@@ -1,0 +1,13 @@
+<head>
+    <script>
+        function fun(bg, tx, size = '30px', st = 'italic') {
+            i = document.getElementById('a')
+            i.style.color = tx
+            i.style.backgroundColor = bg
+            i.style.fontSize = size
+            i.style.fontStyle = st
+        }
+    </script>
+    <p id="a">Hello</p>
+    <input type="submit" onclick="fun('tomato','cyan')">
+</head>

@@ -1,0 +1,17 @@
+<head>
+    <p class="b"> Hello </p>
+    <p class="b"> Hii </p>
+   <button onclick="fun()">Click</button>
+   <script>
+    function fun(){
+        let i=document.querySelectorAll('.b')
+        //  let i=document.querySelectorAll('p')
+        // i[0].innerHTML="How R u?"
+        for (let p of i){
+             p.style.color="tomato";
+             p.style.backgroundColor="cyan";
+             p.innerHTML="Welcome 2K26!"
+        }
+    }
+   </script>
+</head>

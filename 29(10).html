@@ -1,0 +1,23 @@
+<head>
+    <script>
+        function registerUser(){
+            let uname
+            while(uname==''||uname===null||uname===undefined){
+                uname=prompt("Enter username")
+            }
+            let password
+            while(password===null||password===undefined||password.length<8){
+                password=prompt('Enter password:')
+            }
+            var data=confirm('"Are you sure you want to register with this username and password?".')
+            if(data==true){
+                alert(`username:${uname} password:${password}`) 
+            }  
+            else{
+                alert('Registration canceled')
+                return
+            }
+        }
+    </script>
+    <input type="button" value="alert button" onclick="registerUser()">
+</head>

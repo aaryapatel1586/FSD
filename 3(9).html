@@ -1,0 +1,19 @@
+<body>
+    <div onmousedown="fun2(event)" style="height: 100px;weight:100px;background-color: cyan;"></div>
+    <script>
+        function fun2(e){
+            let val=e.button
+            switch(val){
+                case 0:
+                    alert('Left click')
+                    break
+                case 1:
+                    alert('middle click')   
+                    break
+                case 2:
+                    alert("right click")  
+                    break
+            }
+        }
+    </script>
+</body>

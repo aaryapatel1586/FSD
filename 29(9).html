@@ -1,0 +1,23 @@
+<head>
+    <script>
+        function fun(){
+        alert('welcome user')
+        var data=confirm('Enter Do you want to continue')
+        if(data==true){
+            const data1=prompt('Enter Detail','username')
+            alert(`Hello ${data1}`)  
+            const age=prompt("Enter your age: ") 
+            if(age>=18){
+                alert('you are an adult')
+            }
+            else{
+                alert('you are not adult')
+            }
+        }
+        else{
+                alert('Good bye!!')
+            }
+        }
+    </script>
+    <input type="button" value="alert button" onclick="fun()">
+</head>

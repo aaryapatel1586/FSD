@@ -1,0 +1,17 @@
+<body>
+    <input type="text" onfocus="this.style.backgroundColor='yellow'">
+    <input type="text" oninput="this.value=this.value.toLowerCase()">
+    <select><input type="text" onchange="this.value=this.value.toUpperCase()"></select>
+    <input type="text" onblur="this.style.color='blue'">
+    <form action="#" onsubmit="fun()">
+        <input type="text" id="a" name="firstname">
+        <input type="text"  name="lastname">
+        <input type="submit">
+    </form>
+    <script>
+        function fun(){
+            let data=document.getElementById('a').value
+            alert("Welcome"+data)
+        }
+    </script>
+</body>

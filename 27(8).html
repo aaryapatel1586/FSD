@@ -1,0 +1,35 @@
+<head>
+    <script>
+        let arr=["a","b"]
+        arr.push("c")
+        console.log(arr)
+
+        let score=[10,20,30,40]
+        let r=score.pop()
+        console.log(score)
+        console.log(r)
+
+        let nums=[1,2,3,4]
+        let square=nums.map(num=>num*num)
+        console.log(square)
+        console.log(nums)
+
+        let age=[5,18,20,32]
+        let adult=age.filter(a=>a>=18)
+        console.log(adult)
+
+        let uname=["a","b","c"]
+        uname.forEach(a=>{console.log("hello"+a)})
+
+        let color=["red","green","yellow"]
+        console.log(color.includes("green"))
+        console.log(color.includes("tomato"))
+
+        let user=[{id:0,name:"abc"},
+                  {id:1,name:"pqr"},
+                  {id:2,name:"xyz"}]
+        let data=user.find(u=>u.id===2)
+        console.log(data)
+        
+    </script>
+</head>

@@ -1,0 +1,17 @@
+<!-- Spread -->
+ <!-- sorting possible only on 1 dimesinol array -->
+ <head>
+    <script>
+        const arr=[2,1]
+        const arr1=[3,4,5]
+        const narr=[arr,arr1]
+        const narr1=[...arr,...arr1]
+        var obj={...narr1}
+        console.log(obj)
+        console.log(narr)
+        console.log(narr1)
+        console.log(...narr1)
+        console.log(Math.min(narr1))
+        console.log(Math.min(...narr1))
+    </script>
+ </head>
